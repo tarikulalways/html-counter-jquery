@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="assets//css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="single-counter">
+                <h2><span class="counter">60</span>Project</h2>
+            </div>
+            <div class="single-counter">
+                <h2><span class="counter">3600</span>Awards</h2>
+            </div>
+            <div class="single-counter">
+                <h2><span class="counter">1000</span>Client</h2>
+            </div>
+            <div class="single-counter">
+                <h2><span class="counter">36000</span>Line of code</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/waypoint.min.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.counter').counterUp({
+                delay: 10,
+                time: 10000
+            });
+        });
+        
+    </script>
+</body>
+</html>
